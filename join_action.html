@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!--Lamiya Haque-->
+  <title>Join the Club</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.dialog.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.resizable.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<link href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.datepicker.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.dialog.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+	<script>
+		<!--Animation Structure-->
+		$(document).ready(function() {
+			$('b').text("Thanks for applying! We'll be in touch soon"); //Set text to be animated
+			$('b').click(function() { //On text click...
+				$(this).each(function() {
+					$(this).animate(
+						1500, function() { } ).fadeOut(1000); //Fade out text
+				});
+			});
+		});
+	</script>
+</head>
+  
+<body>
+<nav class="navbar">
+	<a class="navbar-brand" href="home.html">
+		<img src="SBClogo.png" alt="SBClogo">
+	</a>
+	<ul>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="schedule.html">Schedule</a></li>
+		<li class="active"><a href="join.html">Join the Club!</a></li>
+		<li><a href="disclaimer.html">Disclaimer</a></li>
+	</ul>
+</nav>
+
+<div class="container-fluid">  
+	<div class="row">
+		<div class="col">
+			<img src="join.png" id="join" alt="Join the Club image">
+		</div>
+		<div class="col">
+			<br><b id="heading"></b><br><br>
+		</div>
+		<div class="div9">
+			<img src="thanks.jpg" class="center" id="thanks" alt="Thank You image">
+		</div>
+	</div>	
+</div>
+</body>
+</html>

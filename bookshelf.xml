@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bookshelf>
+	<book>
+		<month>January</month>
+		<title>Eon: Dragoneye Reborn</title>
+		<author>Alison Goodman</author>
+		<genre>YA Fantasy</genre>
+		<rating>5/5</rating>
+	</book>
+	<book>
+		<month>February</month>
+		<title>Eona: The Last Dragoneye</title>
+		<author>Alison Goodman</author>
+		<genre>YA Fantasy</genre>
+		<rating>5/5</rating>
+	</book>
+	<book>
+		<month>March</month>
+		<title>A Good Girl's Guide to Murder</title>
+		<author>Holly Jackson</author>
+		<genre>YA Mystery</genre>
+		<rating>4/5</rating>
+	</book>
+	<book>
+		<month>April</month>
+		<title>Serpent and Dove</title>
+		<author>Shelby Mahurin</author>
+		<genre>YA Fantasy</genre>
+		<rating>4/5</rating>
+	</book>
+	<book>
+		<month>May</month>
+		<title>These Violent Delights</title>
+		<author>Chloe Gong</author>
+		<genre>YA Mystery</genre>
+		<rating>4/5</rating>
+	</book>
+	<book>
+		<month>June</month>
+		<title>Red, White and Royal Blue</title>
+		<author>Casey McQuiston</author>
+		<genre>YA Romance</genre>
+		<rating>5/5</rating>
+	</book>
+	<book>
+		<month>July</month>
+		<title>To Kill a Kingdom</title>
+		<author>Alexandra Christo</author>
+		<genre>YA Fantasy</genre>
+		<rating>4/5</rating>
+	</book>
+	<book>
+		<month>August</month>
+		<title>The Wicked Deep</title>
+		<author>Shea Ernshaw</author>
+		<genre>YA Fantasy</genre>
+		<rating>4/5</rating>
+	</book>
+	<book>
+		<month>September</month>
+		<title>The Bird and the Blade</title>
+		<author>Megan Bannen</author>
+		<genre>YA Fantasy</genre>
+		<rating>5/5</rating>
+	</book>
+	<book>
+		<month>October</month>
+		<title>Soulswift</title>
+		<author>Megan Bannen</author>
+		<genre>YA Fantasy</genre>
+		<rating>TBR</rating>
+	</book>
+	<book>
+		<month>November</month>
+		<title></title>
+		<author></author>
+		<genre></genre>
+		<rating></rating>
+	</book>
+	<book>
+		<month>December</month>
+		<title></title>
+		<author></author>
+		<genre></genre>
+		<rating></rating>
+	</book>
+</bookshelf>

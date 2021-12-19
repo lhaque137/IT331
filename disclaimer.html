@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!--Lamiya Haque-->
+  <title>Disclaimer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+  <script type="text/javascript">
+		<!--Modifying Content Structure-->
+		//Fucntion to remove dislcaimer heading, paragraph and button
+		function removeDisclaimer() {
+			var disclaimerH = document.getElementById("disclaimerH"); //Create a var for disclaimer heading
+			var disclaimerP = document.getElementById("disclaimerP"); //Create a var for disclaimer paragraph
+			var disclaimerB = document.getElementById("disclaimerB"); //Create a var for disclaimer button
+			disclaimerH.parentNode.removeChild(disclaimerH); //Remove disclaimer heading
+			disclaimerP.parentNode.removeChild(disclaimerP); //Remove disclaimer paragraph
+			disclaimerB.parentNode.removeChild(disclaimerB); //Remove disclaimer button
+		}
+		//
+		function start() {
+			document.getElementById("disclaimerB").addEventListener("click", removeDisclaimer, false); //Get button by element ID and add Event Listener to initiate removeDisclaimer function when button is clicked on
+		}
+		window.addEventListener("load", start, false); //Add Event Listener to initiate start function when page loads
+		
+		
+		
+		<!--User Style Structure-->
+		//Function to change the color of disclaimer text
+		function colorChange() {
+			var inputColor = prompt("Set disclaimer to the following color:", ""); //Create a var for user input
+			var disclaimer = document.getElementById("disclaimerP"); //Create a var for disclaimer paragraph
+			disclaimer.setAttribute("style", "color: " + inputColor + ";"); //Set color style attribute to user input
+		}
+		window.addEventListener("load", colorChange, false); //Add Event Listener to initiate colorChange function when page loads
+		
+		
+		
+		<!--MouseOver/MouseOut Structure-->
+		//Function to determine mouseover actions
+		function mouseOver(e) {
+			if (e.target.getAttribute("id")) { //If mouse hovers over certain text, change text style and weight
+				e.target.setAttribute("style", "font-style: italic;");
+				e.target.setAttribute("style", "font-weight: bold;");
+			}
+		}
+		//Function to determine mouseout actions
+		function mouseOut(e) {
+			if (e.target.getAttribute("id")) { //If mouse no longer hovers over certain text, change text style and weight back to original
+				e.target.setAttribute("style", "font-style: normal;");
+				e.target.setAttribute("style", "font-weight: normal;");
+			}
+		}
+		document.addEventListener("mouseover", mouseOver, false); //Add Event Listener to initiate mouseOver function when mouse hovers over certain text
+		document.addEventListener("mouseout", mouseOut, false); //Add Event Listener to initiate mouseOut function when mouse no longer hovers over certain text
+	</script>
+</head>
+  
+<body>
+<a id="top"></a>
+<nav class="navbar">
+	<a class="navbar-brand" href="home.html">
+		<img src="SBClogo.png" alt="SBClogo">
+	</a>
+	<ul>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="schedule.html">Schedule</a></li>
+		<li><a href="join.html">Join the Club!</a></li>
+		<li class="active"><a href="disclaimer.html">Disclaimer</a></li>
+	</ul>
+</nav>
+
+<div class="float-container">
+	<div class="float-child left">
+		<div class="col">
+			<img src="disclaimer.png" alt="Disclaimer warning image" id="disclaimerH">
+		</div>
+		<div class="col">
+			<b id="disclaimerP">This website is developed as an educational project. Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.</b>
+		</div>
+		<form>
+			<br><input type="button" name="disclaimerB" id="disclaimerB" value="Remove Disclaimer"><br>
+		</form>
+		<div class="row">
+			<div class="col">
+				<img src="references.png" alt="References image">
+			</div>
+			<div class="div10">
+				<b><a href="styles.css" target="_blank">View the CSS style sheet</a></b><br>
+			</div>
+			<div class="div6">
+				<b><a href="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1299076175l/2986865.jpg" target="_blank">1. Viking. (n.d.-a). Eon: Dragoneye Reborn [Book Cover]. https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1299076175l/2986865.jpg</a></b><br><br>
+				<b><a href="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388543903l/7992995.jpg" target="_blank">2. Viking. (n.d.). Eona: The Last Dragoneye [Book Cover]. https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388543903l/7992995.jpg</a></b><br><br>
+				<b><a href="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545494980l/40916679._SY475_.jpg" target="_blank">3. Random House Children’s Books. (n.d.). A Good Girl’s Guide to Murder [Book Cover]. https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545494980l/40916679._SY475_.jpg</a></b><br><br>
+				<b><a href="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549476128l/40024139.jpg" target="_blank">4. HarperCollins. (n.d.). Serpent & Dove [Book Cover]. https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549476128l/40024139.jpg</a></b><br><br>
+				<b><a href="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1580958058l/50892212.jpg" target="_blank">5. Simon & Schuster. (n.d.). These Violent Delights [Book Cover]. https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1580958058l/50892212.jpg</a></b><br><br>
+				<b><a href="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1566742512l/41150487._SY475_.jpg" target="_blank">6. Macmillan. (n.d.). Red, White & Royal Blue [Book Cover]. https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1566742512l/41150487._SY475_.jpg</a></b><br><br>
+				<b><a href="https://images-na.ssl-images-amazon.com/images/I/8140QvYGREL.jpg" target="_blank">7. Feiwel and Friends. (n.d.). To Kill a Kingdom [Book Cover]. https://images-na.ssl-images-amazon.com/images/I/8140QvYGREL.jpg</a></b><br><br>
+				<b><a href="https://m.media-amazon.com/images/I/513AgbHDP-L.jpg" target="_blank">8. Simon Pulse. (n.d.). The Wicked Deep [Book Cover]. https://m.media-amazon.com/images/I/513AgbHDP-L.jpg</a></b><br><br>
+				<b><a href="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1508190270l/36063632.jpg" target="_blank">9. Balzer+Bray. (n.d.). The Bird and the Blade [Book Cover]. https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1508187186l/32702487._SY475_.jpg</a></b><br><br>
+				<b><a href="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1613223680l/56382351.jpg" target="_blank">10. Quill Tree Books. (n.d.). All These Bodies [Book Cover]. https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1613223680l/56382351.jpg</a></b><br><br>
+				<b><a href="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1603387427l/53457092._SY475_.jpg" target="_blank">11. Knopf. (n.d.-b). Six Crimson Cranes [Book Cover]. https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1603387427l/53457092._SY475_.jpg</a></b><br><br>
+				<b><a href="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1610493390l/50531218._SY475_.jpg" target="_blank">12. Penguin. (n.d.). The Hawthorne Legacy [Book Cover]. https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1610493390l/50531218._SY475_.jpg</a></b><br><br>
+				<b><a href="https://www.pexels.com/photo/text-7248762/" target="_blank">13. A. (n.d.). Thank You [Photograph]. https://www.pexels.com/photo/text-7248762/</a></b><br><br>
+				<b><a href="https://bookriot.com/september-2021-ya-releases/" target="_blank">14. Price, T. (2021, September 1). New September 2021 YA Releases For Your TBR. BOOK RIOT. https://bookriot.com/september-2021-ya-releases/</a></b><br><br>
+				<b><a href="home.html" target="_blank">15. Haque, L. (2021, September 26). Current Read banner [Illustration].Banner image of the words "Current Reads"</a></b><br><br>
+				<b><a href="disclaimer.html" target="_blank">16. Haque, L. (2021b, September 26). Disclaimer [Illustration]. Banner Image of the Words “Disclaimer.” https://disclaimer.html</a></b><br><br>
+				<b><a href="disclaimer.html" target="_blank">17. Haque, L. (2021c, September 26). References [Illustration]. Banner Image of the Words “References.” https://disclaimer.html</a></b><br><br>
+				<b><a href="join.html" target="_blank">18. Haque, L. (2021c, September 26). Join The Club [Illustration]. Banner Image of the Words “Join the Club.” https://join.html</a></b><br><br>
+				<b><a href="blade.html" target="_blank">19. Haque, L. (2021d, September 26). Past Reads [Illustration]. Banner Image of the Words “Past Reads.” https://blade.html</a></b><br><br>
+				<b><a href="schedule.html" target="_blank">20. Haque, L. (2021f, September 26). Schedule [Illustration]. Banner Image of the Words “Schedule.” https://schedule.html</a></b><br><br>
+				<b><a href="https://www.codemahal.com/video/javascript-quiz-tutorial/" target="_blank">21. Wood, D. (2016, March 1). JavaScript quiz tutorial – CodeMahal. CodeMahal. Retrieved October 24, 2021, from https://www.codemahal.com/video/javascript-quiz-tutorial/</a></b><br><br>
+				<b><a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_setinterval_progressbar" target="_blank">22. W3Schools online HTML editor. (n.d.). W3Schools. Retrieved November 7, 2021, from https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_setinterval_progressbar</a></b><br><br>
+			</div>
+		</div>
+		<div class="div11">
+			<b><a href="#top">Back to top</a></b>
+		</div>
+	</div>
+	<div class="float-child right">
+		<div class="div8">
+			<h3>Upcoming Meetings</h3>
+			<p>Next in-person meeting will be held on Oct 3 at 7 pm.</p>
+			<p>For any questions, see Rachel Fields.</p>
+			<p>Stay tuned for any updates!</p>
+			<h3>New Releases</h3>
+			<p id="book1">"All These Bodies"<br>by Kendare Blake</p>
+			<p id="book2">"White Smoke"<br>by Tiffany D. Jackson</p>
+			<p id="book3">"The Girls are Never Gone"<br>by Sarah Glenn Marsh</p>
+			<p id="book4">"Dark and Shallow Lies"<br>by Ginny Myers Sain</p>
+			<p id="book5">"Not Here to Be Liked"<br>by Michelle Quach</p>
+			<p id="book6">"For All Time"<br>by Shanna Miles</p>
+			<p id="book7">"So Many Beginnings"<br>by Bethany C. Morrow</p>
+			<p id="book8">"Iron Widow"<br>by Xiran Jay Zhao</p>
+			<p id="book9">"Never Saw You Coming"<br>by Erin Hahn</p>
+			<p id="book10">"Lakesedge"<br>by Lyndall Clipstone</p>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
